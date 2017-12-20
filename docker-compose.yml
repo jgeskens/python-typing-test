@@ -1,0 +1,5 @@
+app:
+  build: .
+  volumes:
+    - .:/app
+  command: bash -c 'cd /app && mypy main.py && python main.py'
